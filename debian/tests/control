@@ -1,0 +1,54 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --all-features
+Features: test-name=rust-bitflags:@
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features arbitrary
+Features: test-name=librust-bitflags-dev:arbitrary
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features bytemuck
+Features: test-name=librust-bitflags-dev:bytemuck
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features compiler_builtins
+Features: test-name=librust-bitflags-dev:compiler_builtins
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features core
+Features: test-name=librust-bitflags-dev:core
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets
+Features: test-name=librust-bitflags-dev:default
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features example_generated
+Features: test-name=librust-bitflags-dev:example_generated
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features rustc-dep-of-std
+Features: test-name=librust-bitflags-dev:rustc-dep-of-std
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features serde
+Features: test-name=librust-bitflags-dev:serde
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features --features std
+Features: test-name=librust-bitflags-dev:std
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test bitflags 2.3.2 --all-targets --no-default-features
+Features: test-name=librust-bitflags-dev:
+Depends: dh-cargo (>= 18), librust-arbitrary-1+default-dev, librust-arbitrary-1+derive-dev, librust-bytemuck-1+default-dev, librust-bytemuck-1+derive-dev, librust-rustversion-1+default-dev, librust-serde-derive-1+default-dev, librust-serde-json-1+default-dev, librust-serde-test-1+default-dev, librust-trybuild-1+default-dev, librust-zerocopy-0.6+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
